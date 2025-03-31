@@ -6,26 +6,36 @@
     <title>Hustlers Universe - E-book</title>
     <style>
         body {
-            background-color: black;
-            color: gold;
+            background-color: #0a0a0a;
+            color: white;
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         header {
-            padding: 40px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #111;
         }
         header img {
-            width: 150px;
+            width: 50px;
             height: auto;
+        }
+        nav a {
+            color: gold;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
         }
         .content {
             padding: 60px 20px;
         }
         .content h1 {
             font-size: 3rem;
+            font-weight: bold;
             margin: 20px 0;
         }
         .content p {
@@ -33,7 +43,12 @@
             margin: 20px 0;
             line-height: 1.5;
         }
-        .button {
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .cta-button {
             background-color: gold;
             color: black;
             padding: 15px 30px;
@@ -42,27 +57,37 @@
             border-radius: 5px;
             display: inline-block;
             margin-top: 30px;
+            font-weight: bold;
         }
-        .button:hover {
+        .cta-button:hover {
             background-color: #ffd700;
         }
         footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 0.9rem;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #111;
+            color: gold;
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="Hustlers Universe Logo">
+        <nav>
+            <a href="#features">Funkce</a>
+            <a href="#testimonials">Reference</a>
+            <a href="#about">O e-booku</a>
+        </nav>
     </header>
     <div class="content">
-        <h1>Objev tajemství Hustlers Universe</h1>
-        <p>Na tomto e-booku najdeš exkluzivní strategii a návod, jak se stát úspěšným v byznysu, osobním rozvoji a životním stylu. Tato kniha ti poskytne všechny nástroje potřebné k tomu, abys se dostal na vrchol.</p>
-        <a href="https://link-na-ebook.com" class="button">Koupit E-book</a>
+        <h1>MONEY MAKING IS A SKILL</h1>
+        <h2>We will teach you how to master it</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>Objev sílu znalostí v našem e-booku a převeď jeho poznatky do svého života. Tento e-book ti ukáže cestu k úspěchu.</p>
+        <a href="https://link-na-ebook.com" class="cta-button">Získej svůj e-book</a>
     </div>
     <footer>
         <p>&copy; 2025 Hustlers Universe. Všechna práva vyhrazena.</p>
