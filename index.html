@@ -3,60 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hustlers Universe - Stažení e-booku</title>
+    <title>Hustlers Universe - E-book</title>
     <style>
         body {
             background-color: black;
             color: gold;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            margin: 0;
+            padding: 0;
         }
-        .container {
-            max-width: 500px;
-            margin: auto;
-            background: rgba(255, 215, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
+        header {
+            padding: 40px;
+            text-align: center;
         }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
+        header img {
+            width: 150px;
+            height: auto;
         }
-        input {
-            background: white;
+        .content {
+            padding: 60px 20px;
         }
-        button {
-            background: gold;
+        .content h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+        .content p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+        .button {
+            background-color: gold;
             color: black;
-            font-size: 16px;
-            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 30px;
         }
-        button:hover {
-            background: darkgoldenrod;
+        .button:hover {
+            background-color: #ffd700;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hustlers Universe</h1>
-        <p>Zadejte svůj e-mail a stáhněte si e-book zdarma!</p>
-        <form id="downloadForm">
-            <input type="email" id="email" placeholder="Zadejte svůj e-mail" required>
-            <button type="submit">Stáhnout e-book</button>
-        </form>
+    <header>
+        <img src="logo.png" alt="Hustlers Universe Logo">
+    </header>
+    <div class="content">
+        <h1>Objev tajemství Hustlers Universe</h1>
+        <p>Na tomto e-booku najdeš exkluzivní strategii a návod, jak se stát úspěšným v byznysu, osobním rozvoji a životním stylu. Tato kniha ti poskytne všechny nástroje potřebné k tomu, abys se dostal na vrchol.</p>
+        <a href="https://link-na-ebook.com" class="button">Koupit E-book</a>
     </div>
-    
-    <script>
-        document.getElementById("downloadForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            let email = document.getElementById("email").value;
-            localStorage.setItem("visitorEmail", email); // Uložení e-mailu
-            window.location.href = "ebook.pdf"; // Změň na skutečný odkaz k e-booku
-        });
-    </script>
+    <footer>
+        <p>&copy; 2025 Hustlers Universe. Všechna práva vyhrazena.</p>
+    </footer>
 </body>
 </html>
