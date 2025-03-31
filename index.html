@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustlers Universe - Stažení e-booku</title>
+    <style>
+        body {
+            background-color: black;
+            color: gold;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: rgba(255, 215, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input {
+            background: white;
+        }
+        button {
+            background: gold;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hustlers Universe</h1>
+        <p>Zadejte svůj e-mail a stáhněte si e-book zdarma!</p>
+        <form id="downloadForm">
+            <input type="email" id="email" placeholder="Zadejte svůj e-mail" required>
+            <button type="submit">Stáhnout e-book</button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById("downloadForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            localStorage.setItem("visitorEmail", email); // Uložení e-mailu
+            window.location.href = "ebook.pdf"; // Změň na skutečný odkaz k e-booku
+        });
+    </script>
+</body>
+</html>
